@@ -4,58 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KREOAXE | Digital. Creative. Performance.</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-        body { background: #050505; color: white; }
-        
-        .hero { padding: 80px 20px; text-align: center; background: radial-gradient(circle, #2d004d 0%, #050505 70%); }
-        .hero h1 { font-size: 3rem; color: #fff; margin-bottom: 10px; }
-        .hero p { color: #aaa; font-size: 1.2rem; margin-bottom: 30px; }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+        body { background: #000; color: #fff; }
 
-        .services-section { padding: 50px 20px; max-width: 1000px; margin: auto; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .service-card { background: #111; padding: 30px; border-radius: 20px; border: 1px solid #333; text-align: center; transition: 0.3s; }
-        .service-card:hover { border-color: #8b5cf6; transform: translateY(-10px); }
-        .service-card h3 { color: #8b5cf6; margin-bottom: 10px; }
+        /* Navigation with Logo */
+        nav { padding: 30px 10%; display: flex; justify-content: space-between; align-items: center; }
+        .logo-img { width: 180px; }
 
-        .contact-box { text-align: center; padding: 50px; background: #0a0a0a; margin-top: 50px; }
-        .btn-link { display: inline-block; padding: 15px 30px; background: #8b5cf6; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; margin: 10px; }
-        
-        footer { text-align: center; padding: 30px; color: #666; }
+        /* Premium Hero */
+        .hero { height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle, #240046 0%, #000 70%); }
+        .hero h1 { font-size: 5rem; text-transform: uppercase; margin-bottom: 20px; background: linear-gradient(to right, #fff, #7b2cbf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        /* Service Cards with Depth */
+        .services { padding: 100px 10%; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .card { background: #0a0a0a; padding: 40px; border: 1px solid #222; border-radius: 25px; transition: 0.5s; cursor: pointer; }
+        .card:hover { border-color: #7b2cbf; box-shadow: 0 0 30px rgba(123, 44, 191, 0.3); transform: translateY(-15px); }
+        .card h3 { font-size: 1.5rem; margin-bottom: 15px; color: #7b2cbf; }
+        .card p { color: #888; font-size: 0.95rem; line-height: 1.8; }
+
+        /* Footer/Contact */
+        .footer { padding: 100px 10%; text-align: center; border-top: 1px solid #222; }
+        .social-icons a { font-size: 2rem; color: #fff; margin: 0 20px; transition: 0.3s; }
+        .social-icons a:hover { color: #7b2cbf; }
     </style>
 </head>
 <body>
 
-    <section class="hero">
-        <h1>KREOAXE</h1>
-        <p>WE DON'T JUST CREATE! WE ELEVATE BRANDS</p>
+    <nav>
+        <img src="logo.png" alt="Kreoaxe Logo" class="logo-img">
+    </nav>
+
+    <section class="hero" data-aos="fade-up">
+        <h1>WE DON'T JUST CREATE!</h1>
+        <p>KreoAxe is your all-in-one digital growth partner.</p>
     </section>
 
-    <section class="services-section">
-        <div class="services-grid">
-            <div class="service-card"><h3>Graphic Design</h3><p>Logo, Posters, Social Media, Brand Identity</p></div>
-            <div class="service-card"><h3>Video Editing</h3><p>Reels, YouTube Videos, Promos</p></div>
-            <div class="service-card"><h3>App Design</h3><p>UI/UX Design, Prototypes, App Redesign</p></div>
-            <div class="service-card"><h3>Website Design</h3><p>Business Websites, Landing Pages, E-Commerce</p></div>
-            <div class="service-card"><h3>Social Media</h3><p>Content Planning, Engagement, Growth</p></div>
-            <div class="service-card"><h3>Meta Ads & PPC</h3><p>Facebook, Instagram Ads, Lead Gen</p></div>
+    <section class="services">
+        <div class="card" data-aos="fade-up">
+            <h3>Graphic Design</h3>
+            <p>We craft stunning visual identities, logos, and social media assets that define your brand’s personality.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Video Editing</h3>
+            <p>From high-energy Reels to cinematic YouTube videos, we edit content that stops the scroll.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Meta Ads & PPC</h3>
+            <p>Data-driven ad campaigns focused on high ROI and effective lead generation for your business.</p>
         </div>
     </section>
 
-    <div class="contact-box">
-        <h2>Let's Grow Together</h2>
-        <a href="tel:6232220297" class="btn-link"><i class="fas fa-phone"></i> Call Now</a>
-        <a href="https://wa.me/916232220297" class="btn-link"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        <div style="margin-top: 20px;">
-            <a href="https://www.instagram.com/kreoaxe" style="color: #fff; margin: 0 15px;"><i class="fab fa-instagram fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/kreoaxe-698611419" style="color: #fff; margin: 0 15px;"><i class="fab fa-linkedin fa-2x"></i></a>
+    <div class="footer">
+        <h2>Let's Work Together</h2>
+        <div class="social-icons" style="margin: 40px 0;">
+            <a href="https://www.instagram.com/kreoaxe"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/916232220297"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/kreoaxe-698611419"><i class="fab fa-linkedin"></i></a>
         </div>
-        <p style="margin-top: 30px;">Owner: Anuj Upadhyay</p>
+        <p>Founder: Anuj Upadhyay | <a href="mailto:kreoaxe1@gmail.com" style="color: #7b2cbf;">kreoaxe1@gmail.com</a></p>
     </div>
 
-    <footer><p>&copy; 2026 KREOAXE. All Rights Reserved.</p></footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ duration: 1000, once: true }); </script>
 </body>
 </html>

@@ -2,38 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KREOAXE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KREOAXE | Digital Growth Partner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
     <style>
-        body { margin: 0; background-color: #000; color: #fff; font-family: sans-serif; text-align: center; }
-        .nav { padding: 40px 0; }
-        /* लोगो का साइज यहाँ से बड़ा कर दिया है */
-        .logo-img { width: 300px !important; height: auto !important; display: block; margin: 0 auto; }
-        .hero { padding: 50px 20px; }
-        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 50px; }
-        .card { background: #1a1a1a; padding: 30px; border-radius: 15px; }
-        .btn { display: inline-block; padding: 15px 30px; background: #7b2cbf; color: #fff; text-decoration: none; border-radius: 50px; margin-top: 20px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #050505; color: #fff; font-family: 'Outfit', sans-serif; }
+        
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle at center, #1a0b2e 0%, #050505 70%); }
+        .logo-img { width: 250px; margin-bottom: 20px; }
+        h1 { font-size: 3.5rem; letter-spacing: -2px; margin-bottom: 10px; }
+        h1 span { color: #5d3fd3; }
+        
+        .services { padding: 80px 10%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: #111; padding: 40px; border: 1px solid #222; border-radius: 20px; transition: 0.3s; }
+        .card:hover { border-color: #5d3fd3; transform: translateY(-10px); }
+        
+        .btn { padding: 20px 40px; background: linear-gradient(90deg, #5d3fd3, #2b6cb0); color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 30px; display: inline-block; }
     </style>
 </head>
 <body>
 
-    <div class="nav">
-        <!-- यहाँ लोगो का फाइल नाम एकदम सही रखें -->
+    <section class="hero">
         <img src="logo.png" class="logo-img" alt="Kreoaxe Logo">
-    </div>
-
-    <div class="hero">
-        <h1>WE DON'T JUST CREATE!</h1>
-        <p>KreoAxe is your all-in-one digital growth partner.</p>
-        <a href="https://wa.me/916232220297" class="btn">Let's Grow Together</a>
-    </div>
+        <h1>WE DON'T JUST CREATE, <br><span>WE ELEVATE.</span></h1>
+        <p>Your vision, our digital expertise.</p>
+        <a href="https://wa.me/916232220297" class="btn">Start Your Project</a>
+    </section>
 
     <div class="services">
-        <div class="card"><h3>Graphic Design</h3><p>Logo, Posters, Social Media, Brand Identity</p></div>
-        <div class="card"><h3>Video Editing</h3><p>Reels, Ads, YouTube Videos, Promos</p></div>
-        <div class="card"><h3>App Design</h3><p>UI/UX Design, Prototypes, App Redesign</p></div>
-        <div class="card"><h3>Website Design</h3><p>Business, Landing Pages, E-Commerce</p></div>
-        <div class="card"><h3>Social Media</h3><p>Content Plan, Engagement, Growth</p></div>
-        <div class="card"><h3>Meta Ads & PPC</h3><p>Facebook, Instagram, Lead Generation</p></div>
+        <div class="card"><h3>Graphic Design</h3><p>High-end branding and visual identity.</p></div>
+        <div class="card"><h3>Video Editing</h3><p>Cinematic editing for maximum engagement.</p></div>
+        <div class="card"><h3>UI/UX Design</h3><p>Seamless experiences for your users.</p></div>
+        <div class="card"><h3>Web Development</h3><p>Blazing fast, custom-coded websites.</p></div>
     </div>
 
 </body>
